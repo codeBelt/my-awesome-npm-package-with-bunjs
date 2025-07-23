@@ -1,0 +1,42 @@
+{
+  "name": "my-awesome-npm-package-with-bunjs",
+  "module": "src/index.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "---------- Dev --------------------------------------------------------": "",
+    "build": "bun build ./src/index.ts --outdir ./dist --format esm && bun build ./src/index.ts --outdir ./dist --format cjs",
+    "watch": "bun build ./src/index.ts --outdir ./dist --format esm --watch",
+    "---------- Versioning --------------------------------------------------": "",
+    "version:patch": "bun version patch",
+    "version:minor": "bun version minor",
+    "version:major": "bun version major",
+    "version:beta": "bun version preminor --preid beta",
+    "version:alpha": "bun version preminor --preid alpha",
+    "version:rc": "bun version preminor --preid rc",
+    "version:prerelease": "bun version prerelease",
+    "---------- Publish -----------------------------------------------------": "",
+    "publish": "bun publish",
+    "prepublishOnly": "bun run build",
+    "publish:beta": "bun publish --tag beta",
+    "publish:alpha": "bun publish --tag alpha",
+    "publish:rc": "bun publish --tag rc",
+    "---------- Link --------------------------------------------------------": "",
+    "link": "bun link",
+    "unlink": "bun unlink",
+    "---------- Lint -------------------------------------------------------": "",
+    "lint:fix": "bunx biome format --write",
+    "---------- Test --------------------------------------------------------": "",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "test:coverage": "bun test --coverage",
+    "-----------------------------------------------------------------------": ""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
