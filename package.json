@@ -2,7 +2,7 @@
   "name": "my-awesome-npm-package-with-bunjs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "---------- Dev --------------------------------------------------------": "",
     "npmLogin": "bunx npm login",
@@ -11,7 +11,7 @@
     "link": "bun link",
     "unlink": "bun unlink",
     "---------- Versioning --------------------------------------------------": "",
-    "version:patch": "bunx bumpp patch",
+    "version:patch": "bunx bumpp patch --no-push",
     "version:minor": "bunx bumpp minor",
     "version:major": "bunx bumpp major",
     "version:beta": "bunx bumpp preminor --preid beta",
