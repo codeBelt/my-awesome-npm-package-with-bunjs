@@ -34,13 +34,17 @@
     "test": "bun test",
     "test:watch": "bun test --watch",
     "test:coverage": "bun test --coverage",
+    "---------- Helper -----------------------------------------------------": "",
+    "checkall": "bun run lint:fix && bun run test && bun run ts",
+    "deps": "bunx npm-upgrade && bun install",
+    "deps:outdated": "bun outdated",
     "-----------------------------------------------------------------------": ""
   },
   "devDependencies": {
-    "@biomejs/biome": "2.1.1",
-    "@types/bun": "latest"
+    "@biomejs/biome": "2.1.2",
+    "@types/bun": "1.2.19"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "5.8.3"
   }
 }
