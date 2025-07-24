@@ -2,7 +2,7 @@
   "name": "my-awesome-npm-package-with-bunjs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "1.3.0-beta.1",
+  "version": "1.3.0",
   "scripts": {
     "---------- Dev --------------------------------------------------------": "",
     "npmLogin": "bunx npm login",
@@ -17,7 +17,6 @@
     "version:beta": "bunx bumpp preminor --preid beta",
     "version:alpha": "bunx bumpp preminor --preid alpha",
     "version:rc": "bunx bumpp preminor --preid rc",
-    "version:prerelease": "bunx bumpp prerelease",
     "---------- Publish -----------------------------------------------------": "",
     "dryRun": "bun publish --dry-run",
     "publish": "bun publish",
