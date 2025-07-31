@@ -2,7 +2,7 @@
   "name": "my-awesome-npm-package-with-bunjs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "scripts": {
     "---------- Login ------------------------------------------------------": "",
     "login": "bunx npm login",
