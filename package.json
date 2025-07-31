@@ -2,7 +2,19 @@
   "name": "my-awesome-npm-package-with-bunjs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "4.1.0",
+  "version": "4.1.1",
+  "keywords": [
+    "bunjs",
+    "npm-package"
+  ],
+  "homepage": "https://github.com/codeBelt/my-awesome-npm-package-with-bunjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeBelt/my-awesome-npm-package-with-bunjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codeBelt/my-awesome-npm-package-with-bunjs/issues"
+  },
   "scripts": {
     "---------- Login ------------------------------------------------------": "",
     "login": "bunx npm login",
