@@ -36,7 +36,7 @@
     "version:alpha": "bunx bumpp preminor --preid alpha --no-push",
     "version:rc": "bunx bumpp preminor --preid rc --no-push",
     "---------- Publish ----------------------------------------------------": "",
-    "dryRun": "bun publish --dry-run",
+    "dryRun": "bunx np --preview",
     "npmPublish": "bun publish",
     "prepublishOnly": "bun run build",
     "release": "bunx np",
